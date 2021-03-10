@@ -46,7 +46,7 @@ Table of Contents
 Major API Changes
 ============
 
-HAPI 3.0 is backward-compatable except
+HAPI 3.0 is backward-compatible except
 
 In HAPI 3.0, 
 1. the URL parameter `id` was replaced with `dataset`. 
