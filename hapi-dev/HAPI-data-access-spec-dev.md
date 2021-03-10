@@ -317,7 +317,7 @@ http://server/hapi/capabilities
 
 ```javascript
 {
-  "HAPI": "2.1",
+  "HAPI": "3.0",
   "status": { "code": 1200, "message": "OK"},
   "outputFormats": [ "csv", "binary", "json" ]
 }
@@ -379,7 +379,7 @@ http://server/hapi/catalog
 
 ```javascript
 {
-   "HAPI" : "2.1",
+   "HAPI" : "3.0",
    "status": { "code": 1200, "message": "OK"},
    "catalog" : 
    [
@@ -573,7 +573,7 @@ http://server/hapi/info?dataset=ACE_MAG
 **Example Response:**
 
 ```javascript
-{  "HAPI": "2.1",
+{  "HAPI": "3.0",
    "status": { "code": 1200, "message": "OK"},
    "startDate": "1998-001Z",
    "stopDate" : "2017-100Z",
@@ -608,7 +608,7 @@ http://server/hapi/info?dataset=ACE_MAG
 This example included the optional `label` attribute for some parameters. The use of a single string for the `units` and `label` of the array parameter `mag_GSE` indicates that all elements of the array have the same units and label. The next example shows a header for a magnetic field dataset where the vector components are assigned distinct units and labels.
 
 ```javascript
-{  "HAPI": "2.1",
+{  "HAPI": "3.0",
    "status": { "code": 1200, "message": "OK"},
    "startDate": "1998-001Z",
    "stopDate" : "2017-100Z",
@@ -1076,7 +1076,7 @@ http://server/hapi/info?dataset=MY_MAG_DATA
 results in a header listing of all the dataset parameters:
 
 ```javascript
-{  "HAPI": "2.1",
+{  "HAPI": "3.0",
    "status": { "code": 1200, "message": "OK"},
    "startDate": "2005-01-21T12:05:00.000Z",
    "stopDate" : "2010-10-18T00:00:00Z",
@@ -1102,7 +1102,7 @@ http://server/hapi/info?dataset=MY_MAG_DATA&parameters=Bx
 and would result in the following header:
 
 ```javascript
-{  "HAPI": "2.1",
+{  "HAPI": "3.0",
    "status": { "code": 1200, "message": "OK"},
    "startDate": "2005-01-21T12:05:00.000Z",
    "stopDate" : "2010-10-18T00:00:00Z",
@@ -1181,7 +1181,7 @@ value, a 1-D array value with an array length of 3, and a string value. The head
 with the data object might look like this:
 
 ```javascript
-{  "HAPI": "2.1",
+{  "HAPI": "3.0",
    "status": { "code": 1200, "message": "OK"},
    "startDate": "2005-01-21T12:05:00.000Z",
    "stopDate" : "2010-10-18T00:00:00Z",
@@ -1277,7 +1277,7 @@ http://server/hapi/data?dataset=path/to/ACE_MAG&start=2016-01-01Z&stop=2016-02-0
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #{
-#  "HAPI": "2.1",
+#  "HAPI": "3.0",
 #  "status": { "code": 1200, "message": "OK"},
 #  "format": "csv",
 #  "startDate": "1998-001Z",
@@ -1500,7 +1500,7 @@ occurred.
 
 ```javascript
 {
-  "HAPI": "2.1",
+  "HAPI": "3.0",
   "status": { "code": 1401, "message": "Bad request - unknown request parameter"}
 }
 ```
@@ -1739,7 +1739,7 @@ By, and Bz for the Cartesian components.
 
 ```javascript
 {
-   "HAPI": "2.1",
+   "HAPI": "3.0",
    "status": { "code": 1200, "message": "OK"},
    "startDate": "2016-01-01T00:00:00.000Z",
    "stopDate": "2016-01-31T24:00:00.000Z",
@@ -1758,7 +1758,7 @@ one-dimensional array of size 3.
 
 ```javascript
 {
-   "HAPI": "2.1",
+   "HAPI": "3.0",
    "status": { "code": 1200, "message": "OK"},
    "startDate": "2016-01-01T00:00:00.000Z",
    "stopDate": "2016-01-31T24:00:00.000Z",
@@ -1789,7 +1789,7 @@ the proton spectrum is a separate variable. There is currently no way in the
 HAPI spec to explicitly link a variable to its uncertainties.
 
 ```javascript
-{"HAPI": "2.1",
+{"HAPI": "3.0",
  "status": { "code": 1200, "message": "OK"},
  "startDate": "2016-01-01T00:00:00.000Z",
  "stopDate": "2016-01-31T24:00:00.000Z",
@@ -1848,7 +1848,7 @@ This shows how "ranges" can specify the bins:
 
 ```javascript
 {
-    "HAPI": "2.1",
+    "HAPI": "3.0",
     "status": { "code": 1200, "message": "OK"},
     "startDate": "2016-01-01T00:00:00.000Z",
     "stopDate": "2016-01-31T24:00:00.000Z",
