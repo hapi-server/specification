@@ -96,9 +96,9 @@ one instant in time; may be scalar as a function of time or an array at each
 time step; must have units; also must have a fill value that represents no
 measurement or absent information.
 
-**dataset** – a collection with a conceptually uniform set of parameters; one
-instance of all the parameters together with associated with a time value
-constitutes a data record. A HAPI service presents a dataset as a seamless
+**record** - all the parameters together with associated with a time value.
+
+**dataset** – a collection of uniform records; A HAPI service presents a dataset as a seamless
 collection of time ordered records, offering a way to retrieve the parameters
 while hiding actual storage details.
 
